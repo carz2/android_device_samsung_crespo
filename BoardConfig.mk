@@ -22,3 +22,5 @@
 
 # Use the parts that are common between all crespos
 include device/samsung/crespo/BoardConfigCommon.mk
+
+OVERRIDE_FORCE_SECURE_OFF := true
