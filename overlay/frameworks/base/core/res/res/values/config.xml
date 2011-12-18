@@ -44,11 +44,11 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>7</item>
-        <item>94</item>
-        <item>208</item>
-        <item>458</item>
-        <item>2223</item>
+        <item>100</item>
+        <item>200</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2500</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -179,6 +179,10 @@
         <item>"bnep\\d"</item>
     </string-array>
 
+    <!-- If true, the screen can be rotated via the accelerometer in all 4
+         rotations as the default behavior. -->
+    <bool name="config_allowAllRotations">true</bool>
+
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
         <item>30</item>
@@ -191,6 +195,9 @@
 
     <!-- crespo doesn't handle this blur effect very quickly. -->
     <bool name="config_sf_slowBlur">true</bool>
+
+    <!-- Boolean indicating whether the wifi chipset has p2p support -->
+    <bool translatable="false" name="config_wifi_p2p_support">true</bool>
 
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
