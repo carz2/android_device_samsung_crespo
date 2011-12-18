@@ -206,6 +206,9 @@ include frameworks/base/build/phone-hdpi-512-dalvik-heap.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/tools/dictionaries
 
+PRODUCT_COPY_FILES += \
+	device/samsung/crespo/scsi_wait_scan.ko:system/modules/scsi_wait_scan.ko
+
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
