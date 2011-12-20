@@ -39,7 +39,7 @@
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
-DEVICE_PACKAGE_OVERLAYS := device/samsung/crespo/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/crespo/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES := \
@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
 # NFCEE access control
-ifeq ($(TARGET_BUILD_VARIANT),user)
+ifeq ($(TARGET_BUILD_VARIANT),user,userdebug)
 	NFCEE_ACCESS_PATH := device/samsung/crespo/nfcee_access.xml
 else
 	NFCEE_ACCESS_PATH := device/samsung/crespo/nfcee_access_debug.xml
@@ -235,5 +235,3 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/nxp/pn544/nxp-pn544-fw-vendor.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-       ro.modversion=Carz-AOSP-ICS-$(shell date +%m%d%Y)-$(PRODUCT_RELEASE_NAME)
