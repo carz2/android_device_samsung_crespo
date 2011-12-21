@@ -121,10 +121,6 @@ PRODUCT_PACKAGES += \
 	audio.a2dp.default \
 	libaudioutils
 
-# NFC
-PRODUCT_PACKAGES += \
-	nfc.herring
-
 # Libs
 PRODUCT_PACKAGES += \
 	libcamera \
