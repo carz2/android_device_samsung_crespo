@@ -77,6 +77,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         device/samsung/crespo/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin
 
+# file that declares the MIFARE NFC constant
+PRODUCT_COPY_FILES += \
+    device/sample/nxp/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+
+
 
 # Generated kcm keymaps
 PRODUCT_PACKAGES += \
