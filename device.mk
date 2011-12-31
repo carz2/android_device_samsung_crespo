@@ -55,8 +55,7 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     vendor/tools/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/tools/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/tools/etc/init.d/02wi-fi:system/etc/init.d/02wi-fi \
-    vendor/tools/bin/sysinit:system/bin/sysinit
+    vendor/tools/etc/sysctl.conf:system/etc/sysctl.conf
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
