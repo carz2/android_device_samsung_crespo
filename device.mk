@@ -38,6 +38,9 @@
 PRODUCT_COPY_FILES := \
 	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
+PRODUCT_COPY_FILES += \
+    device/samsung/crespo/spn-conf.xml:system/etc/spn-conf.xml
+
 # GPS config
 PRODUCT_COPY_FILES += \
         device/samsung/crespo/gps.xml:system/vendor/etc/gps.xml \
@@ -48,6 +51,18 @@ PRODUCT_COPY_FILES +=  \
     vendor/tools/Term.apk:system/app/Term.apk \
     vendor/tools/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/tools/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/tools/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/tools/etc/sysctl.conf:system/etc/sysctl.conf
+
+# Compcache/Zram support
+PRODUCT_COPY_FILES += \
+    vendor/tools/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/tools/bin/compcache:system/bin/compcache \
+    vendor/tools/bin/handle_compcache:system/bin/handle_compcache
+
 $(call inherit-product, device/samsung/crespo/device_base.mk)
 
 # See comment at the top of this file. This is where the other
@@ -56,3 +71,4 @@ $(call inherit-product, device/samsung/crespo/device_base.mk)
 # commonly available
 $(call inherit-product-if-exists, vendor/samsung/crespo/device-vendor.mk)
 
+$(call inherit-product-if-exists, vendor/samsung/crespo/device-vendor-blobs.mk)
