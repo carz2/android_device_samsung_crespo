@@ -35,7 +35,7 @@
             android:summary="@string/blink_timeout_summary_head"
             android:entries="@array/blink_timeout_entries"
             android:entryValues="@array/blink_timeout_entries_values"
-            android:defaultValue="5"
+            android:defaultValue="600"
             android:dependency="touchkey_notification" />
         <ListPreference
             android:key="blink_interval"
