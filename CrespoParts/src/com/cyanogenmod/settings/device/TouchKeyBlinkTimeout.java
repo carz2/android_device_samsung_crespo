@@ -24,7 +24,7 @@ public class TouchKeyBlinkTimeout implements OnPreferenceChangeListener {
         }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        Utils.writeValue(FILE, sharedPrefs.getString(DeviceSettings.KEY_BLINK_TIMEOUT, "5"));
+        Utils.writeValue(FILE, sharedPrefs.getString(DeviceSettings.KEY_BLINK_TIMEOUT, "600"));
     }
 
     @Override
