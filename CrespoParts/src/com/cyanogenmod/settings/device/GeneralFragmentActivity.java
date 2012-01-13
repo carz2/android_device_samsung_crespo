@@ -41,6 +41,7 @@ public class GeneralFragmentActivity extends PreferenceFragment {
     private CheckBoxPreference mNotification;
     private ListPreference mBacklightTimeout;
     private ListPreference mBlinkTimeout;
+    private ListPreference mBlinkInterval;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,10 @@ public class GeneralFragmentActivity extends PreferenceFragment {
         mBlinkTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BLINK_TIMEOUT);
         mBlinkTimeout.setEnabled(TouchKeyBlinkTimeout.isSupported());
         mBlinkTimeout.setOnPreferenceChangeListener(new TouchKeyBlinkTimeout());
+
+        mBlinkInterval = (ListPreference) findPreference(DeviceSettings.KEY_BLINK_INTERVAL);
+        mBlinkInterval.setEnabled(TouchKeyBlinkInterval.isSupported());
+        mBlinkInterval.setOnPreferenceChangeListener(new TouchKeyBlinkInterval());
 
     }
 
