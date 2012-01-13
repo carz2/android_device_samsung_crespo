@@ -34,6 +34,7 @@ public class TouchFragmentActivity extends PreferenceFragment {
 
     private ListPreference mBacklightTimeout;
     private ListPreference mBlinkTimeout;
+    private ListPreference mBlinkInterval;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,8 +47,14 @@ public class TouchFragmentActivity extends PreferenceFragment {
         mBacklightTimeout.setOnPreferenceChangeListener(new TouchKeyBacklightTimeout());
 
         mBlinkTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BLINK_TIMEOUT);
-        mBlinkTimeout.setEnabled(TouchKeyBacklightTimeout.isSupported());
+        mBlinkTimeout.setEnabled(TouchKeyBlinkTimeout.isSupported());
         mBlinkTimeout.setOnPreferenceChangeListener(new TouchKeyBlinkTimeout());
+
+        mBlinkInterval = (ListPreference) findPreference(DeviceSettings.KEY_BLINK_INTERVAL);
+        mBlinkInterval.setEnabled(TouchKeyBlinkInterval.isSupported());
+        mBlinkInterval.setOnPreferenceChangeListener(new TouchKeyBlinkInterval());
     }
+
+
 
 }

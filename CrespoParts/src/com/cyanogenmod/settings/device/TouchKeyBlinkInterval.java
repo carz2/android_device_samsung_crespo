@@ -6,9 +6,9 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceManager;
 
-public class TouchKeyBlinkTimeout implements OnPreferenceChangeListener {
+public class TouchKeyBlinkInterval implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/class/misc/notification/max_blink_count";
+    private static final String FILE = "/sys/class/misc/notification/blink_interval";
 
     public static boolean isSupported() {
         return Utils.fileExists(FILE);
@@ -24,7 +24,7 @@ public class TouchKeyBlinkTimeout implements OnPreferenceChangeListener {
         }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        Utils.writeValue(FILE, sharedPrefs.getString(DeviceSettings.KEY_BLINK_TIMEOUT, "5"));
+        Utils.writeValue(FILE, sharedPrefs.getString(DeviceSettings.KEY_BLINK_INTERVAL, "500"));
     }
 
     @Override
