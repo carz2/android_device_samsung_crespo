@@ -32,6 +32,7 @@ import com.cyanogenmod.settings.device.R;
 
 public class TouchFragmentActivity extends PreferenceFragment {
 
+    private ListPreference mBacklightTimeout;
     private ListPreference mBlinkTimeout;
     private ListPreference mBlinkInterval;
 
@@ -40,6 +41,10 @@ public class TouchFragmentActivity extends PreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.touch_preferences);
+
+        mBacklightTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BACKLIGHT_TIMEOUT);
+        mBacklightTimeout.setEnabled(TouchKeyBacklightTimeout.isSupported());
+        mBacklightTimeout.setOnPreferenceChangeListener(new TouchKeyBacklightTimeout());
 
         mBlinkTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BLINK_TIMEOUT);
         mBlinkTimeout.setEnabled(TouchKeyBlinkTimeout.isSupported());

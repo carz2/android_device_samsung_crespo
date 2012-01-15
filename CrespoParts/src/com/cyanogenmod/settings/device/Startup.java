@@ -11,6 +11,7 @@ public class Startup extends BroadcastReceiver {
         GeneralFragmentActivity.restore(context);
         ColorTuningPreference.restore(context);
         GammaTuningPreference.restore(context);
+        TouchKeyBacklightTimeout.restore(context);
         SoundFragmentActivity.restore(context);
         if (Hspa.isSupported()) {
             Hspa.restore(context);
