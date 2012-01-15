@@ -39,6 +39,7 @@ public class GeneralFragmentActivity extends PreferenceFragment {
 
     private CheckBoxPreference mDeepIdle;
     private CheckBoxPreference mNotification;
+    private ListPreference mBacklightTimeout;
     private ListPreference mBlinkTimeout;
     private ListPreference mBlinkInterval;
 
@@ -63,6 +64,10 @@ public class GeneralFragmentActivity extends PreferenceFragment {
         } else {
             mNotification.setEnabled(false);
         }
+
+        mBacklightTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BACKLIGHT_TIMEOUT);
+        mBacklightTimeout.setEnabled(TouchKeyBacklightTimeout.isSupported());
+        mBacklightTimeout.setOnPreferenceChangeListener(new TouchKeyBacklightTimeout());
 
         mBlinkTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BLINK_TIMEOUT);
         mBlinkTimeout.setEnabled(TouchKeyBlinkTimeout.isSupported());
