@@ -13,6 +13,7 @@ public class Startup extends BroadcastReceiver {
         GammaTuningPreference.restore(context);
         TouchKeyBlinkTimeout.restore(context);
         TouchKeyBlinkInterval.restore(context);
+        TouchKeyBacklightTimeout.restore(context);
         if (Hspa.isSupported()) {
             Hspa.restore(context);
         }
