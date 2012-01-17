@@ -45,6 +45,8 @@ PRODUCT_PACKAGES += \
 
 # Some Extras
 PRODUCT_PACKAGES += \
+	Development\
+	SpareParts\
 	LatinIME \
 	VideoEditor \
 	VoiceDialer \

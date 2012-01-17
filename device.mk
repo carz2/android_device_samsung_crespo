@@ -39,7 +39,8 @@ PRODUCT_COPY_FILES := \
 	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 PRODUCT_COPY_FILES += \
-    device/samsung/crespo/spn-conf.xml:system/etc/spn-conf.xml
+    device/samsung/crespo/spn-conf.xml:system/etc/spn-conf.xml\
+    device/samsung/crespo/apns-conf.xml:system/etc/apns-conf.xml
 
 # GPS config
 PRODUCT_COPY_FILES += \

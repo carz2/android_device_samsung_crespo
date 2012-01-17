@@ -178,9 +178,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mass_storage
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    keyguard.no_require_sim=true \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.com.google.clientidbase=android-google \
+    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.com.android.dataroaming=false
+
 include frameworks/base/build/phone-hdpi-512-dalvik-heap.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/tools/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/tools/overlay/dictionaries
 
 PRODUCT_COPY_FILES += \
 	device/samsung/crespo/scsi_wait_scan.ko:system/modules/scsi_wait_scan.ko
