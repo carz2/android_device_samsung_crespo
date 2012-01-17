@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
 
 # Some Extras
 PRODUCT_PACKAGES += \
+	CrespoParts \
 	Development\
 	SpareParts\
 	LatinIME \
