@@ -214,7 +214,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 include frameworks/base/build/phone-hdpi-512-dalvik-heap.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/tools/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/carz/overlay/dictionaries
 
 PRODUCT_COPY_FILES += \
 	device/samsung/crespo/scsi_wait_scan.ko:system/modules/scsi_wait_scan.ko
