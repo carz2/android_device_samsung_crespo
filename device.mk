@@ -39,7 +39,7 @@ PRODUCT_COPY_FILES := \
 	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 PRODUCT_COPY_FILES += \
-    device/samsung/crespo/spn-conf.xml:system/etc/spn-conf.xml\
+    device/samsung/crespo/spn-conf.xml:system/etc/spn-conf.xml \
     device/samsung/crespo/apns-conf.xml:system/etc/apns-conf.xml
 
 # GPS config
@@ -48,21 +48,23 @@ PRODUCT_COPY_FILES += \
         device/samsung/crespo/gps.conf:system/etc/gps.conf
 
 PRODUCT_COPY_FILES +=  \
-    vendor/tools/backuptool.sh:system/bin/backuptool.sh \
-    vendor/tools/Term.apk:system/app/Term.apk \
-    vendor/tools/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
+    vendor/carz/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/carz/system/app/Term.apk:system/app/Term.apk \
+    vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so \
+    vendor/carz/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/carz/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/tools/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/tools/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/tools/etc/sysctl.conf:system/etc/sysctl.conf
+    vendor/carz/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/carz/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/carz/etc/sysctl.conf:system/etc/sysctl.conf
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/tools/etc/init.local.rc:system/etc/init.local.rc \
-    vendor/tools/bin/compcache:system/bin/compcache \
-    vendor/tools/bin/handle_compcache:system/bin/handle_compcache
+    vendor/carz/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/carz/bin/compcache:system/bin/compcache \
+    vendor/carz/bin/handle_compcache:system/bin/handle_compcache
 
 $(call inherit-product, device/samsung/crespo/device_base.mk)
 
