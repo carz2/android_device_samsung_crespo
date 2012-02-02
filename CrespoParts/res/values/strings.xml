@@ -5,7 +5,6 @@
     <!-- Page Headers -->
     <string name="general_title">GENERAL</string>
     <string name="display_title">DISPLAY</string>
-    <string name="sound_title">SOUND</string>
 
     <string name="category_cpu_title">CPU</string>
     <string name="cpu_deepidle_title_head">Deep Idle</string>
