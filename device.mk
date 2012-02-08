@@ -57,8 +57,7 @@ PRODUCT_COPY_FILES +=  \
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/carz/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/carz/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/carz/etc/sysctl.conf:system/etc/sysctl.conf
+    vendor/carz/bin/sysinit:system/bin/sysinit
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
