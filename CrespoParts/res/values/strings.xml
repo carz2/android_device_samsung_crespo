@@ -9,7 +9,6 @@
     <string name="category_cpu_title">CPU</string>
     <string name="cpu_deepidle_title_head">Deep Idle</string>
     <string name="cpu_deepidle_summary_head">Enables deep idle, intended to provide better battery life. (Experimental at this time!)</string>
-    <string name="category_screen_title">WM8994 Settings ( voodoo )</string>
     <string name="color_tuning_title_head">Color Multipliers Tuning</string>
     <string name="color_tuning_summary_head">Calibrate multipliers screen color</string>
     <string name="gamma_tuning_title_head">Color Gamma Tuning</string>
@@ -22,9 +21,9 @@
     <string name="touchkey_notification_title_head">Backlight Notifications</string>
     <string name="touchkey_notification_summary_head">The touch key backlights will turn on when there is a notification.</string>
     <string name="blink_timeout_title_head">Blink Timeout</string>
-    <string name="blink_timeout_summary_head">Adjust the delay before the touch key blink backlight automatically turns off after a notification</string>
+    <string name="blink_timeout_summary_head">Adjust the touch key blink time.</string>
     <string name="blink_interval_title_head">Blink Interval</string>
-    <string name="blink_interval_summary_head">Adjust the time in between Blinks</string>
+    <string name="blink_interval_summary_head">Adjust the time between blinks</string>
 
     <string name="category_radio_title">Radio</string>
     <string name="hspa_title_head">HSPA</string>
