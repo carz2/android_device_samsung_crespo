@@ -50,7 +50,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/carz/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/carz/system/app/Term.apk:system/app/Term.apk \
-    vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so \
+    vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
+
+# Bring in camera effects & videos
+$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
+PRODUCT_COPY_FILES +=  \
     vendor/carz/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/carz/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
