@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	CrespoParts \
 	Development\
+        FileManager\
 	SpareParts\
 	LatinIME \
 	VideoEditor \
