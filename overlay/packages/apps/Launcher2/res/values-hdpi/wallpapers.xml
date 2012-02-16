@@ -22,6 +22,8 @@
         <item>wallpaper_phasebeam</item>
         <item>wallpaper_pathway_to_the_peaks</item>
         <item>wallpaper_fairytail_falls</item>
+        <item>wallpaper_serene</item>
+        <item>wallpaper_shasta_lavender</item>
         <item>wallpaper_pulse</item>
         <item>wallpaper_nexusrain</item>
         <item>wallpaper_stars</item>
@@ -33,6 +35,5 @@
         <item>wallpaper_mountains</item>
         <item>wallpaper_sunset</item>
         <item>wallpaper_goldengate</item>
-	<item>wallpaper_shuttle</item>
     </string-array>
 </resources>
