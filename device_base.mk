@@ -217,7 +217,14 @@ include frameworks/base/build/phone-hdpi-512-dalvik-heap.mk
 PRODUCT_PACKAGE_OVERLAYS += vendor/carz/overlay/dictionaries
 
 PRODUCT_COPY_FILES += \
-	device/samsung/crespo/scsi_wait_scan.ko:system/modules/scsi_wait_scan.ko
+     device/samsung/crespo/modules/cifs.ko:system/modules/cifs.ko \
+     device/samsung/crespo/modules/exportfs.ko:system/modules/exportfs.ko \
+     device/samsung/crespo/modules/lockd.ko:system/modules/lockd.ko \
+     device/samsung/crespo/modules/nfs.ko:system/modules/nfs.ko \
+     device/samsung/crespo/modules/nfsd.ko:system/modules/nfsd.ko \
+     device/samsung/crespo/modules/ntfs.ko:system/modules/ntfs.ko \
+     device/samsung/crespo/modules/scsi_wait_scan.ko:system/modules/scsi_wait_scan.ko \
+     device/samsung/crespo/modules/sunrpc.ko:system/modules/sunrpc.ko
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -226,7 +233,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_AAPT_CONFIG := normal hdpi
 
 ifeq ($(TARGET_PREBUILT_WIFI_MODULE),)
-LOCAL_WIFI_MODULE := device/samsung/crespo/bcm4329.ko
+LOCAL_WIFI_MODULE := device/samsung/crespo/modules/bcm4329.ko
 else
 LOCAL_WIFI_MODULE := $(TARGET_PREBUILT_WIFI_MODULE)
 endif
