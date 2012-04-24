@@ -122,6 +122,7 @@ public class ColorTuningPreference extends DialogPreference implements OnClickLi
         }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+
         for (String filePath : FILE_PATH) {
             int iValue;
             String sDefaultValue = Utils.readOneLine(filePath);
