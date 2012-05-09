@@ -61,6 +61,8 @@ PRODUCT_PACKAGES += \
 	libcyanogen-dsp \
 	audio_effects.conf
 
+# T-Mobile theme engine
+include vendor/carz/themes/themes_common.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -76,7 +78,7 @@ PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RELEASE_NAME := NS
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_DISPLAY_ID=IMM76D BUILD_FINGERPRINT=google/soju/crespo:4.0.4/IMM76D/299849:user/release-keys PRIVATE_BUILD_DESC="soju-user 4.0.4 IMM76D 299849 release-keys" BUILD_NUMBER=299849
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT=google/soju/crespo:4.0.4/IMM76D/299849:user/release-keys PRIVATE_BUILD_DESC="soju-user 4.0.4 IMM76D 299849 release-keys" BUILD_NUMBER=299849
 
 PRODUCT_PROPERTY_OVERRIDES += \
-       ro.modversion=CARZ-$(PRODUCT_RELEASE_NAME)-$(PLATFORM_VERSION)-V-$(shell date +%m.%d.%H.%M)
+       ro.modversion=CARZ-$(PRODUCT_RELEASE_NAME)-$(PLATFORM_VERSION)-V-$(shell date +%m%d.%H%M)

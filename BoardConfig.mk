@@ -23,7 +23,4 @@
 # Use the parts that are common between all crespos
 include device/samsung/crespo/BoardConfigCommon.mk
 
-# T-Mobile theme engine
-include vendor/carz/themes/themes_common.mk
-
 OVERRIDE_FORCE_SECURE_OFF := true
