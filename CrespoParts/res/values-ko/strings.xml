@@ -9,8 +9,6 @@
     <string name="color_blue_title">파랑</string>
 
     <string name="category_touchkey_title">터치키</string>
-    <string name="backlight_timeout_title_head">조명 지속시간</string>
-    <string name="backlight_timeout_summary_head">터치키 조명이 자동으로 꺼지기 전 지속시간 조정</string>
     <string name="blink_timeout_title_head">깜빡임 지속시간</string>
     <string name="blink_timeout_summary_head">알림 뒤 깜빡임 조명이 자동으로 꺼지기 전 지속시간 조정</string>
 
