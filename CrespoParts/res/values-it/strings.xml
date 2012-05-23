@@ -11,6 +11,8 @@
     <string name="color_blue_title">Blu</string>
 
     <string name="category_touchkey_title">Softkey</string>
+    <string name="backlight_timeout_title_head">Backlight Timeout</string>
+    <string name="backlight_timeout_summary_head">Aggiusta il ritardo prima dello spegnimento automatico delle Softkey</string>
     <string name="blink_timeout_title_head">Blink Timeout</string>
     <string name="blink_timeout_summary_head">Aggiusta il ritardo prima dello spegnimento automatico delle Softkey dopo una notifica</string>
 

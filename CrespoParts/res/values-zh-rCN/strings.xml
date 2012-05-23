@@ -11,6 +11,8 @@
     <string name="color_blue_title">蓝</string>
 
     <string name="category_touchkey_title">触控键</string>
+    <string name="backlight_timeout_title_head">背光延时</string>
+    <string name="backlight_timeout_summary_head">调整触控键背光自动关闭前的延迟时间</string>
     <string name="blink_timeout_title_head">闪烁延时</string>
     <string name="blink_timeout_summary_head">调整触控键闪烁通知自动关闭前的延迟时间</string>
 
