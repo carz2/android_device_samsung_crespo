@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
         device/samsung/crespo/gps.xml:system/vendor/etc/gps.xml \
         device/samsung/crespo/gps.conf:system/etc/gps.conf
 
+PRODUCT_COPY_FILES +=  \
+    vendor/carz/system/app/Term.apk:system/app/Term.apk \
+    vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
+
 $(call inherit-product, device/samsung/crespo/device_base.mk)
 
 # See comment at the top of this file. This is where the other
@@ -51,3 +55,4 @@ $(call inherit-product, device/samsung/crespo/device_base.mk)
 # commonly available
 $(call inherit-product-if-exists, vendor/samsung/crespo/device-vendor.mk)
 
+$(call inherit-product-if-exists, vendor/samsung/crespo/device-vendor-blobs.mk)
