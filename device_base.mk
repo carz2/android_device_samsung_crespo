@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
 	device/samsung/crespo/init.herring.rc:root/init.herring.rc \
 	device/samsung/crespo/init.herring.usb.rc:root/init.herring.usb.rc \
+	device/samsung/crespo/fstab.herring:root/fstab.herring \
 	device/samsung/crespo/ueventd.herring.rc:root/ueventd.herring.rc
 
 # Prebuilt kl and kcm keymaps
@@ -243,6 +244,9 @@ LOCAL_WIFI_MODULE := device/samsung/crespo/modules/bcm4329.ko
 else
 LOCAL_WIFI_MODULE := $(TARGET_PREBUILT_WIFI_MODULE)
 endif
+
+#PRODUCT_COPY_FILES += \
+#	$(LOCAL_WIFI_MODULE):system/modules/lib/bcmdhd.ko
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/samsung/crespo/kernel
