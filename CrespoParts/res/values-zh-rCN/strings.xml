@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nexus S 设置</string>
+
+    <string name="color_tuning_title_head">颜色增值</string>
+    <string name="color_tuning_summary_head">调整屏幕颜色增值</string>
+    <string name="gamma_tuning_title_head">伽玛颜色校正</string>
+    <string name="gamma_tuning_summary_head">调整伽玛颜色校正</string>
+    <string name="color_red_title">红</string>
+    <string name="color_green_title">绿</string>
+    <string name="color_blue_title">蓝</string>
+
+    <string name="category_touchkey_title">触控键</string>
+    <string name="blink_timeout_title_head">闪烁延时</string>
+    <string name="blink_timeout_summary_head">调整触控键闪烁通知自动关闭前的延迟时间</string>
+
+    <string name="category_radio_title">无线电</string>
+    <string name="hspa_title_head">HSPA</string>
+    <string name="hspa_summary_head">启用 HSDPA／HSUPA</string>
+</resources>

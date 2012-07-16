@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">넥서스 S 설정</string>
+
+    <string name="color_tuning_title_head">색상 조율</string>
+    <string name="color_tuning_summary_head">화면 색상 보정</string>
+    <string name="color_red_title">빨강</string>
+    <string name="color_green_title">녹색</string>
+    <string name="color_blue_title">파랑</string>
+
+    <string name="category_touchkey_title">터치키</string>
+    <string name="blink_timeout_title_head">깜빡임 지속시간</string>
+    <string name="blink_timeout_summary_head">알림 뒤 깜빡임 조명이 자동으로 꺼지기 전 지속시간 조정</string>
+
+</resources>
