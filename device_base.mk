@@ -179,11 +179,12 @@ PRODUCT_COPY_FILES += \
 	vendor/carz/system/app/Term.apk:system/app/Term.apk \
 	vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
 
-# Device app
+# Device apps
 PRODUCT_PACKAGES += \
-        CrespoParts \
+	CrespoParts \
 	Development \
-	Stk
+	Stk \
+	FileManager
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
