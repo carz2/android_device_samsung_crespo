@@ -39,7 +39,7 @@
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
-DEVICE_PACKAGE_OVERLAYS += device/samsung/crespo/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/crespo/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES := \
@@ -169,9 +169,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	device/samsung/crespo/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc
 
+#Boot animation
+PRODUCT_COPY_FILES += \
+	vendor/carz/media/bootanimation.zip:system/media/bootanimation.zip
+
+#tools
+PRODUCT_COPY_FILES += \
+	vendor/carz/bin/backuptool.sh:system/bin/backuptool.sh \
+	vendor/carz/system/app/Term.apk:system/app/Term.apk \
+	vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
+
 # Device app
 PRODUCT_PACKAGES += \
-        CrespoParts
+        CrespoParts \
+	Development \
+	Stk
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
