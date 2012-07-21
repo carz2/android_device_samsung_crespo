@@ -183,8 +183,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	CrespoParts \
 	Development \
-	Stk \
-	FileManager
+	DSPManager \
+	FileManager \
+	Stk
+
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
@@ -263,8 +265,8 @@ else
 LOCAL_WIFI_MODULE := $(TARGET_PREBUILT_WIFI_MODULE)
 endif
 
-PRODUCT_COPY_FILES += \
-	$(LOCAL_WIFI_MODULE):system/lib/modules/bcm4329.ko
+#PRODUCT_COPY_FILES += \
+#	$(LOCAL_WIFI_MODULE):system/lib/modules/bcm4329.ko
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/samsung/crespo/kernel
@@ -277,5 +279,5 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/nxp/pn544/nxp-pn544-fw-vendor.mk)
 
-#WIFI_BAND := 802_11_BG
-#$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
+WIFI_BAND := 802_11_BG
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
