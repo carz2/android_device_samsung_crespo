@@ -244,13 +244,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
 PRODUCT_COPY_FILES += \
+     device/samsung/crespo/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 #     device/samsung/crespo/modules/cifs.ko:system/lib/modules/cifs.ko \
 #     device/samsung/crespo/modules/exportfs.ko:system/lib/modules/exportfs.ko \
 #     device/samsung/crespo/modules/lockd.ko:system/lib/modules/lockd.ko \
 #     device/samsung/crespo/modules/nfs.ko:system/lib/modules/nfs.ko \
 #     device/samsung/crespo/modules/nfsd.ko:system/lib/modules/nfsd.ko \
 #     device/samsung/crespo/modules/ntfs.ko:system/lib/modules/ntfs.ko \
-     device/samsung/crespo/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 #     device/samsung/crespo/modules/sunrpc.ko:system/lib/modules/sunrpc.ko
 
 # we have enough storage space to hold precise GC data
