@@ -183,8 +183,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	CrespoParts \
 	Development \
-	Stk \
-	FileManager
+	DSPManager \
+	FileManager \
+	Stk
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
