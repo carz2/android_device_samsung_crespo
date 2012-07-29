@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
+# T-Mobile theme engine
+include vendor/carz/themes/themes_common.mk
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
