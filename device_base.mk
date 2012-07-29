@@ -177,13 +177,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/carz/bin/backuptool.sh:system/bin/backuptool.sh \
 	vendor/carz/system/app/Term.apk:system/app/Term.apk \
-	vendor/carz/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
+	vendor/carz/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Device apps
 PRODUCT_PACKAGES += \
 	CrespoParts \
 	Development \
 	DSPManager \
+	libcyanogen-dsp \
+	audio_effects.conf \
 	FileManager \
 	Stk
 
