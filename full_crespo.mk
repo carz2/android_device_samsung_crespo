@@ -20,7 +20,9 @@
 #
 
 # Get the long list of APNs
-PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+PRODUCT_COPY_FILES += \
+	device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml \
+	device/samsung/crespo/spn-conf.xml:system/etc/spn-conf.xml
 
 # Root
 PRODUCT_PACKAGES += \

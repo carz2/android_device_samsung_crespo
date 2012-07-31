@@ -179,6 +179,11 @@ PRODUCT_COPY_FILES += \
 	vendor/carz/system/app/Term.apk:system/app/Term.apk \
 	vendor/carz/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/carz/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/carz/bin/sysinit:system/bin/sysinit
+
 # Device apps
 PRODUCT_PACKAGES += \
 	CrespoParts \
@@ -261,11 +266,11 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Screen size is "normal", density is "hdpi"
 PRODUCT_AAPT_CONFIG := normal hdpi
 
-ifeq ($(TARGET_PREBUILT_WIFI_MODULE),)
-LOCAL_WIFI_MODULE := device/samsung/crespo/modules/bcm4329.ko
-else
-LOCAL_WIFI_MODULE := $(TARGET_PREBUILT_WIFI_MODULE)
-endif
+#ifeq ($(TARGET_PREBUILT_WIFI_MODULE),)
+#LOCAL_WIFI_MODULE := device/samsung/crespo/modules/bcm4329.ko
+#else
+#LOCAL_WIFI_MODULE := $(TARGET_PREBUILT_WIFI_MODULE)
+#endif
 
 #PRODUCT_COPY_FILES += \
 #	$(LOCAL_WIFI_MODULE):system/lib/modules/bcm4329.ko
