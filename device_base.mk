@@ -173,6 +173,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/carz/media/bootanimation.zip:system/media/bootanimation.zip
 
+# Bring in camera effects & videos
+$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
+PRODUCT_COPY_FILES +=  \
+    vendor/carz/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/carz/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+
 #tools
 PRODUCT_COPY_FILES += \
 	vendor/carz/bin/backuptool.sh:system/bin/backuptool.sh \
@@ -192,6 +198,7 @@ PRODUCT_PACKAGES += \
 	libcyanogen-dsp \
 	audio_effects.conf \
 	FileManager \
+	openvpn \
 	Stk
 
 
