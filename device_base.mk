@@ -253,7 +253,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    drm.service.enabled=true
 
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
