@@ -199,6 +199,7 @@ PRODUCT_PACKAGES += \
 	audio_effects.conf \
 	FileManager \
 	openvpn \
+	SpareParts \
 	Stk
 
 
