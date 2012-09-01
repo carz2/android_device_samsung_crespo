@@ -268,6 +268,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     drm.service.enabled=true
+    ro.telephony.default_network=3
 
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
