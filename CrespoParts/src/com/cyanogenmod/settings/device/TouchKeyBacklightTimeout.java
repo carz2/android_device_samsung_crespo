@@ -8,7 +8,7 @@ import android.preference.PreferenceManager;
 
 public class TouchKeyBacklightTimeout implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/class/misc/notification/bl_timeout";
+    private static final String FILE = "/sys/class/misc/backlightdimmer/delay";
 
     public static boolean isSupported() {
         return Utils.fileExists(FILE);
