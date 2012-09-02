@@ -34,12 +34,14 @@
     <string name="credits_presets">Credits: ale.landra91 cpaixao provolinoo</string>
 
     <string name="category_touchkey_title">Touch Keys</string>
-    <string name="touchkey_notification_title_head">Backlight Notifications</string>
-    <string name="touchkey_notification_summary_head">The touch key backlights will turn on when there is a notification.</string>
+    <string name="backlight_title_head">Backlight Dimming</string>
+    <string name="backlight_summary_head">Touchkey backlights will dim after specified time</string>
     <string name="backlight_timeout_title_head">Backlight Timeout</string>
     <string name="backlight_timeout_summary_head">Adjust the delay before the touch key backlight automatically turns off</string>
+    <string name="touchkey_notification_title_head">Backlight Notifications</string>
+    <string name="touchkey_notification_summary_head">The touch key backlights will turn on when there is a notification</string>
     <string name="blink_timeout_title_head">Blink Timeout</string>
-    <string name="blink_timeout_summary_head">Adjust the touch key blink time.</string>
+    <string name="blink_timeout_summary_head">Adjust the touch key blink time</string>
     <string name="blink_interval_title_head">Blink Interval</string>
     <string name="blink_interval_summary_head">Adjust the time between blinks</string>
 

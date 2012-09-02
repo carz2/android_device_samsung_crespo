@@ -9,7 +9,7 @@
         android:summary="@string/backlight_timeout_summary_head"
         android:entries="@array/backlight_timeout_entries"
         android:entryValues="@array/backlight_timeout_entries_values"
-        android:defaultValue="5" />
+        android:defaultValue="5000" />
     <ListPreference
         android:key="blink_timeout"
         android:title="@string/blink_timeout_title_head"

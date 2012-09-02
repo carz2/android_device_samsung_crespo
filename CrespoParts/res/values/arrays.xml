@@ -6,17 +6,15 @@
         <item>15 seconds</item>
         <item>20 seconds</item>
         <item>30 seconds</item>
-        <item>Never</item>
     </string-array>
 
     <string-array name="backlight_timeout_entries_values" translatable="false">
-        <item>2</item>
-        <item>5</item>
-        <item>10</item>
-        <item>15</item>
-        <item>20</item>
-        <item>30</item>
-        <item>0</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>30000</item>
     </string-array>
 
     <string-array name="blink_timeout_entries">

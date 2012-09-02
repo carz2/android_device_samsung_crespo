@@ -42,11 +42,13 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
     private static final String CPU_DEEPIDLE_STATS = "/sys/class/misc/deepidle/idle_stats_list";
     private static final String CPU_DEEPIDLE_RESET = "/sys/class/misc/deepidle/reset_stats";
     private static final String TOUCHKEY_NOTIFICATION_FILE = "/sys/class/misc/notification/enabled";
+    private static final String TOUCHKEY_BACKLIGHTDIMMER_FILE = "/sys/class/misc/backlightdimmer/enabled";
     private static final String PREF_ENABLED = "1";
     private static final String TAG = "CrespoParts_General";
 
     private CheckBoxPreference mDeepIdle;
     private CheckBoxPreference mNotification;
+    private CheckBoxPreference mBacklight;
     private ListPreference mBacklightTimeout;
     private ListPreference mBlinkTimeout;
     private ListPreference mBlinkInterval;
@@ -60,6 +62,7 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
         PreferenceScreen prefSet = getPreferenceScreen();
         mDeepIdle = (CheckBoxPreference) findPreference(DeviceSettings.KEY_DEEPIDLE);
         mNotification = (CheckBoxPreference) findPreference(DeviceSettings.KEY_NOTIFICATION);
+        mBacklight = (CheckBoxPreference) findPreference(DeviceSettings.KEY_BACKLIGHT);
 
         if (isSupported(CPU_DEEPIDLE_FILE)) {
             mDeepIdle.setChecked(PREF_ENABLED.equals(Utils.readOneLine(CPU_DEEPIDLE_FILE)));
@@ -71,6 +74,12 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
             mNotification.setChecked(PREF_ENABLED.equals(Utils.readOneLine(TOUCHKEY_NOTIFICATION_FILE)));
         } else {
             mNotification.setEnabled(false);
+        }
+
+        if (isSupported(TOUCHKEY_BACKLIGHTDIMMER_FILE)) {
+            mBacklight.setChecked(PREF_ENABLED.equals(Utils.readOneLine(TOUCHKEY_BACKLIGHTDIMMER_FILE)));
+        } else {
+            mBacklight.setEnabled(false);
         }
 
         mBacklightTimeout = (ListPreference) findPreference(DeviceSettings.KEY_BACKLIGHT_TIMEOUT);
@@ -106,8 +115,11 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
             final CheckBoxPreference chkPref = (CheckBoxPreference) preference;
             boxValue = chkPref.isChecked() ? "1" : "0";
             Utils.writeValue(TOUCHKEY_NOTIFICATION_FILE, boxValue);
+        } else if (key.equals(DeviceSettings.KEY_BACKLIGHT)) {
+            final CheckBoxPreference chkPref = (CheckBoxPreference) preference;
+            boxValue = chkPref.isChecked() ? "1" : "0";
+            Utils.writeValue(TOUCHKEY_BACKLIGHTDIMMER_FILE, boxValue);
         }
-
         return true;
     }
 
@@ -125,6 +137,11 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
         if (isSupported(TOUCHKEY_NOTIFICATION_FILE)) {
             String sDefaultValue = Utils.readOneLine(TOUCHKEY_NOTIFICATION_FILE);
             Utils.writeValue(TOUCHKEY_NOTIFICATION_FILE, sharedPrefs.getBoolean(DeviceSettings.KEY_NOTIFICATION,
+                             PREF_ENABLED.equals(sDefaultValue)));
+        }
+        if (isSupported(TOUCHKEY_BACKLIGHTDIMMER_FILE)) {
+            String sDefaultValue = Utils.readOneLine(TOUCHKEY_BACKLIGHTDIMMER_FILE);
+            Utils.writeValue(TOUCHKEY_BACKLIGHTDIMMER_FILE, sharedPrefs.getBoolean(DeviceSettings.KEY_BACKLIGHT,
                              PREF_ENABLED.equals(sDefaultValue)));
         }
     }

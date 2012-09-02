@@ -24,7 +24,7 @@ public class TouchKeyBacklightTimeout implements OnPreferenceChangeListener {
         }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        Utils.writeValue(FILE, sharedPrefs.getString(DeviceSettings.KEY_BACKLIGHT_TIMEOUT, "5"));
+        Utils.writeValue(FILE, sharedPrefs.getString(DeviceSettings.KEY_BACKLIGHT_TIMEOUT, "5000"));
     }
 
     @Override
