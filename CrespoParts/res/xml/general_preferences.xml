@@ -12,7 +12,8 @@
             android:summary="@string/cpu_deepidle_summary_head" />
 
         <PreferenceScreen android:key="deepidle_stats"
-            android:title="@string/label_deepidle_stats" />
+            android:title="@string/label_deepidle_stats"
+            android:dependency="deepidle" />
 
     </PreferenceCategory>
 
