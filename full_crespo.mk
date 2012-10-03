@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
 # Root
 PRODUCT_PACKAGES += \
 	Superuser \
-	Superuser.apk \
 	su
 
 # Live Wallpapers

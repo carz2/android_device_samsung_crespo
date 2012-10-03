@@ -208,6 +208,8 @@ PRODUCT_COPY_FILES += \
 
 # Device apps
 PRODUCT_PACKAGES += \
+        bash \
+        Basic \
 	CrespoParts \
 	Development \
 	DSPManager \
@@ -216,7 +218,8 @@ PRODUCT_PACKAGES += \
 	FileManager \
 	openvpn \
 	SpareParts \
-	Stk
+	Stk \
+        vim
 
 
 # for bugmailer
