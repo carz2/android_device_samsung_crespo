@@ -1977,7 +1977,7 @@ status_t CameraHardwareSec::setParameters(const CameraParameters& params)
 
                 ALOGI("area=%s, x=%i, y=%i", area.toString8().string(), x, y);
                 if (mSecCamera->setObjectPosition(x, y) < 0) {
-                    ALOGE("ERR(%s):Fail on mSecCamera->setObjectPosition(%s)", __func__, new_focus_area);
+                    ALOGI("ERR(%s):Fail on mSecCamera->setObjectPosition(%s)", __func__, new_focus_area);
                     ret = UNKNOWN_ERROR;
                 }
             }
