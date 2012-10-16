@@ -207,6 +207,10 @@ PRODUCT_COPY_FILES += \
     vendor/carz/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/carz/bin/sysinit:system/bin/sysinit
 
+#Enhanced NFC
+PRODUCT_COPY_FILES += \
+    vendor/carz/etc/permissions/com.cyanogenmod.nfc.enhanced.xml:system/etc/permissions/com.cyanogenmod.nfc.enhanced.xml
+
 # Device apps
 PRODUCT_PACKAGES += \
         bash \
