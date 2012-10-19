@@ -199,6 +199,7 @@ PRODUCT_COPY_FILES +=  \
 #tools
 PRODUCT_COPY_FILES += \
 	vendor/carz/bin/backuptool.sh:system/bin/backuptool.sh \
+	vendor/carz/bin/backuptool.functions:system/bin/backuptool.functions \
 	vendor/carz/system/app/Term.apk:system/app/Term.apk \
 	vendor/carz/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
