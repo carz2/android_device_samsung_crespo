@@ -155,8 +155,8 @@ PRODUCT_PACKAGES += \
 	power.s5pc110
 
 # Torch
-PRODUCT_PACKAGES += \
-    Torch
+#PRODUCT_PACKAGES += \
+#    Torch
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
 
 # Device apps
 PRODUCT_PACKAGES += \
-        bash \
         Basic \
 	CrespoParts \
 	Development \

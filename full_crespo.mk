@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
         librs_jni
 
 # T-Mobile theme engine
-include vendor/carz/themes/themes_common.mk
+#include vendor/carz/themes/themes_common.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -55,7 +55,7 @@ PRODUCT_RELEASE_NAME := NS
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT=google/soju/crespo:4.1.2/JZO54K/485486:user/release-keys PRIVATE_BUILD_DESC="soju-user 4.1.2 JZO54K 485486 release-keys" BUILD_NUMBER=485486
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JZO54K
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40C
 
 PRODUCT_PROPERTY_OVERRIDES += \
        ro.modversion=CARZ-$(PRODUCT_RELEASE_NAME)-$(PLATFORM_VERSION)-V-$(shell date +%m%d.%H%M)
