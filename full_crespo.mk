@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
 # T-Mobile theme engine
 #include vendor/carz/themes/themes_common.mk
 
+# All the Sounds
+$(call inherit-product, frameworks/base/data/sounds/NewAudio.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
