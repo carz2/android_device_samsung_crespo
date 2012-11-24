@@ -107,12 +107,11 @@
     <!-- Default blink frequency for notification LED is 9 seconds. -->
     <integer name="config_defaultNotificationLedOff">9000</integer>
 
-    <string-array name="config_locationProviderPackageNames" translatable="false">
-        <!-- The standard AOSP fused location provider -->
-        <item>com.android.location.fused</item>
-        <!-- The Google provider -->
-        <item>com.google.android.location</item>
-    </string-array>
+    <!-- Package name providing network location support. 
+    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string> -->
+
+    <!-- Package name providing geocoder API support.
+    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string> -->
 
     <!-- XXXXX NOTE THE FOLLOWING RESOURCES USE THE WRONG NAMING CONVENTION.
          Please don't copy them, copy anything else. -->
