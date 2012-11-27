@@ -158,10 +158,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Torch
 
-# Torch
-PRODUCT_PACKAGES += \
-    Torch
-
 # Camera
 PRODUCT_PACKAGES += \
 	camera.herring
