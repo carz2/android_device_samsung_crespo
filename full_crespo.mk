@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
         librs_jni
 
 # T-Mobile theme engine
-#include vendor/carz/themes/themes_common.mk
+include vendor/carz/themes/themes_common.mk
 
 # All the Sounds
 $(call inherit-product, frameworks/base/data/sounds/NewAudio.mk)
