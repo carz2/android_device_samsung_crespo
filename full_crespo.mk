@@ -52,7 +52,7 @@ $(call inherit-product, device/samsung/crespo/device.mk)
 PRODUCT_NAME := full_crespo
 PRODUCT_DEVICE := crespo
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RELEASE_NAME := NS
 
