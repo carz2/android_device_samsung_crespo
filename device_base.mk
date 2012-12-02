@@ -268,11 +268,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
-    ro.ril.hsxpa=2 \
-    ro.ril.gprsclass=12 \
-    ro.ril.hsdpa.category=8 \
-    ro.ril.enable.dtm=1 \
-    ro.ril.hsupa.category=5 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
