@@ -273,6 +273,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.telephony.default_network=3
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Pyxis.ogg \
+    ro.config.notification_sound=Deneb.ogg \
+    ro.config.alarm_alert=Hassium.ogg
+
 include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
 PRODUCT_COPY_FILES += \
