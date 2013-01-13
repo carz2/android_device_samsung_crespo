@@ -1,3 +1,0 @@
-<resources>
-    <add-resource type="bool" name="config_hardwareAccelerated">true</add-resource>
-</resources>
