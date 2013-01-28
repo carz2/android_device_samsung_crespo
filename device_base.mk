@@ -213,6 +213,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
         bash \
         Basic \
+        CMFileManager \
 	CrespoParts \
 	Development \
 	DSPManager \
