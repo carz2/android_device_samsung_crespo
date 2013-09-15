@@ -211,9 +211,9 @@ PRODUCT_COPY_FILES += \
 
 # Device apps
 PRODUCT_PACKAGES += \
-        bash \
-        Basic \
-        CMFileManager \
+	bash \
+	Basic \
+	CMFileManager \
 	CrespoParts \
 	Development \
 	DSPManager \
@@ -223,14 +223,7 @@ PRODUCT_PACKAGES += \
 	openvpn \
 	SpareParts \
 	Stk \
-        vim
-
-
-# for bugmailer
-PRODUCT_PACKAGES += send_bug
-PRODUCT_COPY_FILES += \
-	system/extras/bugmailer/bugmailer.sh:system/bin/bugmailer.sh \
-	system/extras/bugmailer/send_bug:system/bin/send_bug
+	vim
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
